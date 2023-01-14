@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main class="main">
+        <form id="survey-form">
+            <label for="name" id="name-label" class="label-form">Name</label><br>
+            <input type="text" id="name" class="input-form" placeholder="Enter your name" required> <br>   
+    
+            <label for="email" id="email-label" class="label-form">Email</label><br>
+            <input type="email" id="email" class="input-form" placeholder="Enter your email" required> <br>
+    
+            <label for="number" id="number-label" class="label-form">Age</label><br>
+            <input type="number" id="number" class="input-form" min="10" max="99" placeholder="Enter your age" required> <br>
+            
+            <label for="dropdown" class="label-form">How did you find out about freeCodeCamp?</label> <br>
+            <select name="select" id="dropdown" class="input-form">
+                <option disabled selected class="op">Select your area</option>
+                <option value="Webpage" class="op">Web page</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+    
+            <span class="label-form">What is your gender?</span><br>
+            <label for="feminine" class="input-form radio-button">
+                <input type="radio" id="feminine" name="gender" value="feminine" class="input" checked> Feminine
+            </label>
+            <label for="male" class="input-form radio-button">
+                <input type="radio" id="male" name="gender" value="male" class="input"> Male
+            </label> <br>
+    
+            <span class="label-form">What areas interest you?</span> <br>
+            <label class="input-form checkbox">
+                <input type="checkbox" value="Responsive Web Desing" class="input"> Responsive Web Desing
+            </label><br>
+            <label class="input-form checkbox">
+                <input type="checkbox" value="JavaScript Algorithms" class="input"> JavaScript Algorithms and Data Structures
+            </label><br>
+            <label class="input-form checkbox">
+                <input type="checkbox" value="Front End Development" class="input"> Front End Development
+            </label><br>
+            <label class="input-form checkbox">
+                <input type="checkbox" value="Back End Development" class="input"> Back End Development
+            </label><br>
+            <label class="input-form checkbox">
+                <input type="checkbox" value="Data Analysis" class="input"> Data Analysis
+            </label><br>
+    
+            <span class="label-form comments">Comments</span><br> 
+            <textarea name="comments" cols="30" rows="10" class="input-form textarea" placeholder="Write your comment here or suggestion"></textarea><br>
+    
+            <button id="submit" type="submit" class="submit">Sumbit</button>
+            
+        </form>
+    </main>
+    
+
+    
+
+</body>
+</html>
